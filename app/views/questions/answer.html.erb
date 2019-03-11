@@ -1,11 +1,15 @@
-<h1>Questions#answer</h1>
+<h2>Questions#answer</h2>
 <p>Find me in app/views/questions/answer.html.erb</p>
 
-<ul>
-  <li><%= @your_message %></li>
-  <li>-You</li>
-  <li> <%= @coach_answer %> </li>
-  <li>-Your coach</li>
-</ul>
+<div class="message">
+  <p><%= @your_message %>
+  <br>
+  <span class="sender">-You</span></p>
+</div>
+<div class="message background-yellow">
+  <p><%= @coach_answer %>
+  <br>
+  <span class="sender">-Your coach</span></p>
+</div>
 
 <p><%= link_to 'Ask a new question', 'ask' %></p>
